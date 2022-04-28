@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="w-full h-full min-h-screen">
+      <header
+        class="w-full h-24 flex items-center px-8 justify-end bg-slate-50"
+      >
+        <ul class="flex h-full">
+          <li
+            class="px-4 w-32 h-full text-center align-middle pt-9 border-b-4 border-b-slate-50 hover:border-purple-700"
+          >
+            <a href="#" class="text-slate-800">Início</a>
+          </li>
+          <li
+            class="px-4 w-32 h-full text-center aling-middle pt-9 border-b-4 border-b-slate-50 hover:border-purple-700"
+          >
+            <a href="#" class="text-slate-800">Histórico</a>
+          </li>
+          <li
+            class="px-4 w-32 h-full text-center aling-middle pt-9 border-b-4 border-b-slate-50 hover:border-purple-700"
+          >
+            <a href="#competencias" class="text-slate-800">Competências</a>
+          </li>
+          <li
+            class="px-4 w-32 h-full text-center aling-middle pt-9 border-b-4 border-b-slate-50 hover:border-purple-700"
+          >
+            <a href="#projetos" class="text-slate-800">Projetos</a>
+          </li>
+          <li
+            class="px-4 w-32 h-full text-center aling-middle pt-9 border-b-4 border-b-slate-50 hover:border-purple-700"
+          >
+            <a href="#contato" class="text-slate-800">Contato</a>
+          </li>
+        </ul>
+      </header>
+      <div
+        class="w-full bg-gradient-to-tr from-purple-900 to-purple-700 min-h-[30rem] sm:py-6 md:py-4 py-10"
+      >
+        <main class="container mx-auto px-4">
+          <h2 class="pt-10 md:pt-16 font-sans font-bold text-4xl text-slate-50">
+            Bem vindo ao meu portfólio!
+          </h2>
+          <p class="mt-6 text-slate-50 font-light">
+            Meu nome é Breno Macedo, desenvolvedor Web, Mobile e Desktop.
+          </p>
+          <p class="mt-4 text-slate-50 font-medium">O que encontrarei aqui?</p>
+          <p class="text-slate-50 font-light">
+            Aqui você encontrará um resumo sobre mim, minha caminhada
+            profissional até os dias de hoje, soft/hard skills e projetos em
+            diversas linguagens.
+          </p>
+          <p class="mt-4 text-slate-50 font-medium">
+            Como contato o proprietário deste portfólio?
+          </p>
+          <p class="text-slate-50 font-light">
+            Na área de contato terá todos os meios atualizaveis como e-mail,
+            celular e redes sociais para tal finalidade. Para facilitar ainda
+            mais esse processo, você pode optar por clicar no símbolo do
+            WhatsApp que uma janela com uma caixa de texto será aberta para
+            você, a partir daí é só digitar a mensagem desejada e me enviar.
+            &#128578;
+          </p>
+          <p class="mt-4 text-slate-50 font-light mb-10">
+            <span class="font-medium">Atenção:</span> Todos os projetos
+            apresentados aqui serão projetos Open-Source sob as licenças MIT,
+            Apache 2.0 ou GPLv3, isto é, são livres para cópia e alteração do
+            código de acordo com a sua necessidade.
+          </p>
+        </main>
+      </div>
+      <main class="container mx-auto px-4">
+        <h2 class="pt-10 md:pt-16 font-sans font-bold text-4xl text-slate-600">
+          Histórico de carreira
+        </h2>
+        <div class="py-12 flex justify-center items-center">
+          <div
+            class="rounded-[50%] h-24 w-24 bg-slate-50 border-[0.5rem] border-purple-700 align-middle text-center pt-7 mx-2 shrink-0 cursor-pointer"
+            data-timeline-target="1"
+          >
+            <span class="font-bold text-purple-700">2019</span>
+          </div>
+          <div
+            class="w-1/3 bg-neutral-200 border-opacity-30 rounded h-1 shrink"
+            data-timeline-line
+          ></div>
+          <div
+            class="rounded-[50%] h-24 w-24 bg-slate-50 border-[0.5rem] border-neutral-200 border-opacity-30 align-middle text-center pt-7 mx-2 shrink-0 cursor-pointer"
+            data-timeline-target="2"
+          >
+            <span class="font-extralight">2020</span>
+          </div>
+          <div
+            class="w-1/3 bg-neutral-200 border-opacity-30 rounded h-1 shrink"
+            data-timeline-line
+          ></div>
+          <div
+            class="rounded-[50%] h-24 w-24 bg-slate-50 border-[0.5rem] border-neutral-200 border-opacity-30 align-middle text-center pt-7 mx-2 shrink-0 cursor-pointer"
+            data-timeline-target="3"
+          >
+            <span class="font-extralight">2021</span>
+          </div>
+        </div>
+        <div data-timeline="1">
+          <h3 class="font-sans font-bold text-3xl text-slate-600">
+            IT Risk (jul/2019 - jul/2020)
+          </h3>
+          <p class="mt-4">adas</p>
+        </div>
+        <div hidden data-timeline="2">
+          <h3 class="font-sans font-bold text-3xl text-slate-600">
+            NTL Nova Tecnologia Ltda. (set/2020 - jun/2021)
+          </h3>
+          <p class="mt-4">adas</p>
+        </div>
+        <div hidden data-timeline="3">
+          <h3 class="font-sans font-bold text-3xl text-slate-600">
+            Connectcom (jul/2021 - Atual)
+          </h3>
+          <p class="mt-4">adas</p>
+        </div>
+      </main>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="src/js/timeline.js"></script>
+  </body>
+</html>
