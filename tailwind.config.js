@@ -1,16 +1,12 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./components/**/*.{html,js}",
-    "./pages/**/*.{html,js}",
-    "./**/*.{html,js}",
-    ".src/**/*.{html,js}",
-    "./index.html",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./dist/*.html", "./dist/*.js"],
   theme: {
-    container: {
-      center: true,
+    extend: {
+      backgroundImage: {
+        dark: "radial-gradient(circle at center,rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url('/assets/img/dark-texture.jpg');",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
