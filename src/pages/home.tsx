@@ -1,5 +1,6 @@
 import { Container, Grid, Stack } from "@mui/material";
 import Header from "../components/header";
+import EmployerTimeline from "../components/employer-timeline";
 
 export default function Home({ params }: any) {
   return (
@@ -9,10 +10,10 @@ export default function Home({ params }: any) {
         <Stack className="pt-[8rem]">
           <section
             id="about_me"
-            className="w-full h-[90vh] flex items-center bg-dark bg-cover bg-no-repeat bg-center flex-wrap"
+            className="w-full min-h-[90vh] flex items-center bg-dark bg-cover bg-no-repeat bg-center flex-wrap"
           >
-            <h3 className="text-white text-[8rem] sm:text-[10rem] md:text-[16rem]">
-              About me
+            <h3 className="text-white text-[6.5rem] sm:text-[10rem] md:text-[16rem]">
+              Sobre mim
             </h3>
             <Grid container>
               <Grid xs={12} md={5} lg={6} item p={4}>
@@ -52,18 +53,138 @@ export default function Home({ params }: any) {
           </section>
           <section
             id="experience"
-            className="w-full h-[90vh] flex items-center bg-dark bg-cover bg-no-repeat bg-center flex-wrap"
+            className="w-full min-h-[90vh] flex items-center bg-dark bg-cover bg-no-repeat bg-center flex-wrap"
           >
-            <h3 className="text-white text-[8rem] sm:text-[10rem] md:text-[16rem]">
-              Experience
+            <h3 className="text-white text-[6.5rem] sm:text-[10rem] md:text-[16rem]">
+              Experiência
             </h3>
+            <Stack
+              width="100%"
+              direction={{ xs: "column", sm: "row" }}
+              flexWrap="wrap"
+              spacing={5}
+              useFlexGap
+            >
+              <div className="flex-auto">
+                <EmployerTimeline />
+              </div>
+
+              <article className="text-white w-full md:w-[70rem]  flex-grow">
+                <h5 className="text-7xl">06/2019 - 06/2020</h5>
+                <p className="text-5xl mt-8">IT Risk</p>
+                <p className="text-2xl mt-2">Estagiário</p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+              </article>
+              <article className="hidden text-white w-full md:w-[70rem]  flex-grow">
+                <h5 className="text-7xl">09/2020 - 06/2021</h5>
+                <p className="text-5xl">NTL - Nova Tecnologia LTDA.</p>
+                <p className="text-3xl">Auxiliar administrativo</p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+              </article>
+              <article className="hidden text-white w-full md:w-[70rem]  flex-grow">
+                <h5 className="text-7xl">07/2021 - até o momento</h5>
+                <p>Connectcom</p>
+                <p>Administrador de redes</p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+              </article>
+              <article className="hidden text-white w-full md:w-[70rem]  flex-grow">
+                <h5 className="text-7xl">Buscando novas oportunidades</h5>
+                <p>IT Risk</p>
+                <p>Estagiário</p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+                <p className="text-2xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis asperiores accusantium, nesciunt iure hic, pariatur
+                  ipsum eius quas quis ducimus aspernatur cum culpa impedit
+                  ullam magni quibusdam. Necessitatibus, quae. Quod! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Odit excepturi
+                  culpa distinctio odio dolor voluptatem deserunt in asperiores,
+                  similique architecto. Porro quam ut, iure error eum voluptate
+                  consectetur ipsa placeat?
+                </p>
+              </article>
+            </Stack>
           </section>
           <section
             id="skills"
-            className="w-full h-[90vh] flex items-center bg-dark bg-cover bg-no-repeat bg-center flex-wrap"
+            className="w-full min-h-[90vh] flex items-center bg-dark bg-cover bg-no-repeat bg-center flex-wrap"
           >
-            <h3 className="text-white text-[8rem] sm:text-[10rem] md:text-[16rem]">
-              Skills
+            <h3 className="text-white text-[6.5rem] sm:text-[10rem] md:text-[16rem]">
+              Habilidades
+            </h3>
+          </section>
+          <section
+            id="projects"
+            className="w-full min-h-[90vh] flex items-center bg-dark bg-cover bg-no-repeat bg-center flex-wrap"
+          >
+            <h3 className="text-white text-[6.5rem] sm:text-[10rem] md:text-[16rem]">
+              Projetos
             </h3>
           </section>
         </Stack>

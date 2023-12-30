@@ -43,5 +43,5 @@ module.exports = {
     port: 4000,
     hot: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin()],
 };
