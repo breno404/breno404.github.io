@@ -15,9 +15,21 @@ const GlobalStyle = createGlobalStyle<{ $whiteColor?: boolean }>`
 html{
     scroll-behavior: smooth;
 }
+
+#sobre{
+    scroll-margin-top: 4rem;
+}
+
+#competencias{
+    scroll-margin-top: 4rem;
+}
+
+#projetos{
+    scroll-margin-top: 4rem;
+}
+
 `;
 
-export const dark = {}
-export const light = {}
+
 
 export default GlobalStyle;
