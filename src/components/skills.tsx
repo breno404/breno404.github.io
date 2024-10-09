@@ -23,6 +23,7 @@ const StyledSkills = styled.section`
   & .skills .skills-subtitle {
     font-weight: 600;
     font-size: 2.2rem;
+    padding: 2rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -83,6 +84,7 @@ const StyledSkills = styled.section`
     justify-content: start;
     align-items: center;
     gap: 1rem;
+    padding: 2rem;
     padding-top: 1rem;
     margin-bottom: 2rem;
   }

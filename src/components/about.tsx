@@ -51,7 +51,7 @@ export default function About() {
     <StyledAbout>
       <div
         id="sobre"
-        className="container flex justify-between items-center mx-auto"
+        className="container flex justify-between flex-wrap items-center mx-auto p-[2rem]"
       >
         <section className="profile"></section>
         <section className="info">

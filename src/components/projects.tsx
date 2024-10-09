@@ -9,6 +9,7 @@ const StyledProjects = styled.section`
 
   & .projects {
     width: 100%;
+    padding: 2rem;
     padding-top: 1rem;
     margin-bottom: 2rem;
   }

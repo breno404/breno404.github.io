@@ -10,6 +10,7 @@ const StyledPresentation = styled.section`
 
   & .resume {
     max-width: 510px;
+    padding: 2rem;
   }
 
   & .resume .resume-title {
@@ -56,7 +57,7 @@ export default function Presentation() {
       <div className="container flex justify-between items-center mx-auto">
         <section className="resume">
           <h2 className="resume-title">Olá, seja bem-vindo ao meu github.io</h2>
-          <p className="resume-content ">
+          <p className="resume-content">
             Eu sou um desenvolvedor web com foco em React para o Front-end e
             Node|Spring Boot para o Back-end, também possuo conhecimentos que
             fogem a esse nicho, trabalho com desenvolvimento desde 2021, sou
