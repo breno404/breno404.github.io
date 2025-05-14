@@ -12,7 +12,7 @@
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
-.card a:hover {
+.card a:hover:not(#profile.card a:hover) {
   color: #0e76ee;
   text-decoration: underline;
 }
