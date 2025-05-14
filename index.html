@@ -1,9 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/dist/bundle.js" defer></script>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/components.css">
+  <link rel="stylesheet" href="/animations.css">
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body data-theme="light">
+  <header class="flex items-center justify-between text-20"
+    style="height: 80px; width: 100%;padding: 0 2rem;border-bottom:2px solid black">
+    <nav class=" place-content-center">Breno Macedo</nav>
+    <!-- <nav class="place-content-center">
+      <a class="" href="">Perfil</a>
+      <a class="" href="">Habilidades</a>
+      <a class="" href="">Sobre mim</a>
+      <a class="" href="">Projetos</a>
+    </nav> -->
+    <nav class="place-content-center">
+      <label id="theme-switcher" class="switch">
+        <input type="checkbox">
+        <span class="slider round">
+          <i class="fi fi-ss-moon-stars"></i>
+        </span>
+      </label>
+    </nav>
+  </header>
+  <div class="container ">
+    <main id="template">
+      <section id="left" class="flex flex-column">
+        <section id="profile" class="card">
+          <div class="card-body">
+            <img id="profile-image" src="/assets/img/profile.jpeg" alt="profile-image" loading="lazy" />
+            <br>
+            <p id="profile-name">Breno Macedo</p>
+            <br>
+            <p class="card-text">Desenvolvedor Full-Stack</p>
+            <br>
+            <a id="cv-btn" href="/assets/pdf/Currículo - Breno Macedo.pdf" target="_blank" rel="noopener noreferrer">
+              Download CV
+            </a>
+            <br>
+            <section id="profile-social-icons">
+              <a href="https://linkedin.com/in/breno-m-e-sa/" rel="noopener noreferrer">
+                <i id="linkedin" class="fi fi-brands-linkedin"></i></a>
+            </section>
+            <br>
+            <section class="text-14">
+              <i class="fi fi-sr-marker"></i> <span class="">Rio de Janeiro, Brasil</span>
+            </section>
+            <a class="block text-14" href="mailto:brenomacedo404@gmail.com" rel="noopener noreferrer">
+              <i class="fi fi-sr-envelope"></i>
+              <span class="">brenomacedo404@gmail.com</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="skills" class="card">
+          <div class="card-header">
+            <p class="card-title">Habilidades</p>
+          </div>
+          <div class="card-body">
+            <ul id="skills-list" class="card-text">
+              <li>
+                <p>CSS</p>
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>Tailwind CSS</li>
+                  <li>Material UI</li>
+                  <li>Ant Design</li>
+                </ul>
+              </li>
+              <li>
+                <p>JavaScript/TypeScript</p>
+                <ul>
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Express</li>
+                  <li>Nest.js</li>
+                  <li>React Native</li>
+                  <li>Vue</li>
+                  <li>Jest</li>
+                </ul>
+              </li>
+              <li>
+                <p>Java</p>
+                <ul>
+                  <li>Spring Boot</li>
+                  <li>JSP</li>
+                  <li>JUnit</li>
+                </ul>
+              </li>
+              <li>
+                <p>PHP</p>
+                <ul>
+                  <li>Laravel</li>
+                  <li>Symfony</li>
+                  <li>PHPUnit</li>
+                </ul>
+              </li>
+              <li>
+                <p>Python</p>
+                <ul>
+                  <li>Django</li>
+                  <li>Flask</li>
+                  <li>Pytest</li>
+                </ul>
+              </li>
+              <li>
+                <p>Golang</p>
+                <ul>
+                  <li>Gin</li>
+                  <li>Echo</li>
+                  <li>Gorm</li>
+                  <li>Gorilla Mux</li>
+                </ul>
+              </li>
+              <li>
+                <p>Dart</p>
+                <ul>
+                  <li>Flutter</li>
+                </ul>
+              </li>
+              <li>
+                <p>Banco de Dados</p>
+                <ul>
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                  <li>SQL Server</li>
+                  <li>DB2</li>
+                  <li>MongoDB</li>
+                  <li>Redis</li>
+                  <li>SQLite</li>
+                </ul>
+              </li>
+              <li>
+                Docker
+              </li>
+              <li>Figma</li>
+              <li>GLPI</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section id="right" class="flex flex-column ">
+        <section class="card">
+          <div class="card-header">
+            <p class="card-title">Sobre mim</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+            <p class="text-14">Sou um desenvolvedor Full Stack com experiência em desenvolvimento web e APIs.
+              Atualmente trabalho na G4F, atendendo à PPSA, onde atuo na sustentação das aplicações, além de contribuir
+              realizando análise de dados.</p>
+            <br>
+            <p class="text-14">Tenho conhecimento sólido em JavaScripts e TypeScript, Java, PHP, Python, Golang, Docker,
+              Bancos de dados
+              Relacionais e Não-relacionais, Design Pattern, Test-Driven Development, Domain-Driven Design e ferramentas
+              de ITSM como o GLPI.</p>
+            <br>
+            <p class="text-14">Também trabalho com integrações de APIs, Gateways de pagamentos e Autenticações com
+              provedores externos.</p>
+            <br>
+            <p class="text-14">Já atuei em empresas públicas e privadas, lidando com diferentes ambientes e demandas
+              técnicas. Tenho facilidade para aprender novas tecnologias e foco em entregar soluções funcionais e bem
+              estruturadas.</p>
+            </p>
+          </div>
+        </section>
+        <section id="projects" class="card">
+          <div class="card-header">
+            <p class="card-title">Projetos</p>
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              Apenas projetos públicos estarão presentes aqui, projetos privados não serão listados.
+            </div>
+            <br>
+            <div id="projects-list" class="flex flex-wrap">
+              <section class="card fade-in-up">
+                <img class="block"
+                  src="https://img.freepik.com/free-vector/startup-life-concept-illustration_114360-1068.jpg?t=st=1746730149~exp=1746733749~hmac=32fde17926cb419493d397935a2e20503d36eb74199a80ade840f6eb4b729ccd&w=740"
+                  alt="" loading="lazy" />
+                <div class="card-body" style="max-width: 530px;">
+                  <br>
+                  <p class="text-18 semibold ">Converter</p>
+                  <br>
+                  <p class="card-text">Uma aplicação simples de conversão de bases numéricas.</p>
+                  <small class="text-12">Repositório: <a href="https://github.com/breno404/converter" target="_blank"
+                      rel="noopener noreferrer">https://github.com/breno404/converter</a></small>
+                </div>
+              </section>
+              <section class="card fade-in-up">
+                <img class="block"
+                  src="https://img.freepik.com/free-vector/files-sent-concept-illustration_114360-3629.jpg?t=st=1746730174~exp=1746733774~hmac=e346076b80f1b57bd880926dcaa867ac19fc25e8c24cbc41cf8f372caa12840a&w=740"
+                  alt="" loading="lazy" />
+                <div class="card-body" style="max-width: 530px;">
+                  <br>
+                  <p class="text-18 semibold ">XADREZ</p>
+                  <br>
+                  <p class="card-text">Este projeto é um jogo de CLI desenvolvido durante o curso de Java do
+                    instrutor
+                    Nélio Alves</p>
+                  <small class="text-12">Repositório: <a class="" href="https://github.com/breno404/XADREZ"
+                      target="_blank" rel="noopener noreferrer">https://github.com/breno404/XADREZ</a></small>
+                </div>
+
+              </section>
+              <section class="card fade-in-up">
+                <img class="block"
+                  src="https://img.freepik.com/free-vector/startup-life-concept-illustration_114360-1068.jpg?t=st=1746730149~exp=1746733749~hmac=32fde17926cb419493d397935a2e20503d36eb74199a80ade840f6eb4b729ccd&w=740"
+                  alt="" loading="lazy" />
+                <div class="card-body" style="max-width: 530px;"><br>
+                  <p class="text-18 semibold">Flappy Bird</p><br>
+                  <p class="card-text">
+                    Jogo desenvolvido para a Web durante o curso da Cod3r de Web 3.0, trata-se de um clone do famoso
+                    jogo de celular Flappy Bird
+                  </p>
+                  <small class="text-12">Repositório: <a class="" href="https://github.com/breno404/flappy-bird-cod3r"
+                      target="_blank"
+                      rel="noopener noreferrer">https://github.com/breno404/flappy-bird-cod3r</a></small>
+                </div>
+
+              </section>
+              <section class="card fade-in-up">
+                <img class="block"
+                  src="https://img.freepik.com/free-vector/files-sent-concept-illustration_114360-3629.jpg?t=st=1746730174~exp=1746733774~hmac=e346076b80f1b57bd880926dcaa867ac19fc25e8c24cbc41cf8f372caa12840a&w=740"
+                  alt="" loading="lazy" />
+                <div class="card-body" style="max-width: 530px;"><br>
+                  <p class="text-18 semibold">Springboot 3 Acenelio</p><br>
+                  <p class="card-text">Projeto desenvolvido com o acompanhamento do instrutor Nélio Alves no curso
+                    de
+                    SpringBoot</p>
+                  <small class="text-12">Repositório: <a class=""
+                      href="https://github.com/breno404/springboot3-acenelio" target="_blank"
+                      rel="noopener noreferrer">https://github.com/breno404/springboot3-acenelio</a></small>
+                </div>
+
+              </section>
+              <section class="card fade-in-up">
+                <img class="block"
+                  src="https://img.freepik.com/free-vector/startup-life-concept-illustration_114360-1068.jpg?t=st=1746730149~exp=1746733749~hmac=32fde17926cb419493d397935a2e20503d36eb74199a80ade840f6eb4b729ccd&w=740"
+                  alt="" loading="lazy" />
+                <div class="card-body" style="max-width: 530px;">
+                  <br>
+                  <p class="text-18 semibold">Springboot 3 MongoDB Acenelio</p>
+                  <br>
+                  <p class="card-text">Projeto desenvolvido com o acompanhamento do instrutor Nélio Alves no curso
+                    de
+                    SpringBoot</p>
+                  <small class="text-12">Repositório: <a href="https://github.com/breno404/springboot3-mongodb-acenelio"
+                      target="_blank"
+                      rel="noopener noreferrer">https://github.com/breno404/springboot3-mongodb-acenelio</a></small>
+                </div>
+
+              </section>
+              <section class=" card fade-in-up">
+                <img class="block"
+                  src="https://img.freepik.com/free-vector/files-sent-concept-illustration_114360-3629.jpg?t=st=1746730174~exp=1746733774~hmac=e346076b80f1b57bd880926dcaa867ac19fc25e8c24cbc41cf8f372caa12840a&w=740"
+                  alt="" loading="lazy" />
+                <div class="card-body" style="max-width: 530px;">
+                  <br>
+                  <p class="text-18 semibold">TCC</p>
+                  <br>
+                  <p class="card-text">Trabalho de conclusão de curso desenvolvido em React + GraphQL</p>
+                  <small class="text-12">Repositório: <a href="https://github.com/breno404/tcc" target="_blank"
+                      rel="noopener noreferrer">https://github.com/breno404/tcc</a></small>
+                </div>
+
+              </section>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="/script.js" defer></script>
+</body>
+
 </html>
